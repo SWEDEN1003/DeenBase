@@ -1,0 +1,85 @@
+// {
+//     "version": "0.2.0",
+//     "configurations": [
+//         {
+//             "name": "P63",
+//             "type": "python",
+//             "request": "launch",
+//             "program": "/home/weidong.shi1/code/planner/P63/.venv/lib/python3.8/site-packages/torchpilot/runner/ddp_launcher.py",
+//             "justMyCode": false,
+//             "console": "internalConsole",
+//             "args": [
+//                 "1",
+//                 "experiments/task_planner/exp_plannn2/cfg_plannn2.py",
+//                 "--run-name",
+//                 "P63_rebase3",
+//             ],
+//         }
+//     ],
+// }
+
+// {
+//     "version": "0.2.0",
+//     "configurations": [
+//         {
+//             "name": "P63",
+//             "type": "python",
+//             "request": "launch",
+//             "program": "/home/weidong.shi1/code/planner/P63/.venv/lib/python3.8/site-packages/torchpilot/runner/ddp_launcher.py",
+//             "justMyCode": false,
+//             "console": "internalConsole",
+//             "args": [
+//                 "1",
+//                 "experiments/task_planner/exp_plannn2/cfg_plannn2.py",
+//                 "--run-name",
+//                 "P63_rebase3",
+//                 "-it", "torch",
+//                 "-c", "/home/weidong.shi1/torchpilot_outputs/task_planner/exp_plannn2/ep_631481_P63_turnlightsignal_all_data_5s_3s_time/task_planner/exp_plannn2/ep_631481_P63_turnlightsignal_all_data_5s_3s_time/ckpt/checkpoint_last.pth.tar",
+//             ],
+//         }
+//     ],
+// }
+
+
+// {
+//     "version": "0.2.0",
+//     "configurations": [
+//         {
+//             "name": "P63",
+//             "type": "python",
+//             "request": "launch",
+//             "program": "/home/weidong.shi1/code/planner/P63/.venv/lib/python3.8/site-packages/torchpilot/runner/ddp_launcher.py",
+//             "justMyCode": false,
+//             "console": "internalConsole",
+//             "args": [
+//                 "1",
+//                 "experiments/task_planner/exp_plannn2/cfg_plannn2_rl.py",
+//                 "--run-name",
+//                 "P63_rebase3",
+//             ],
+//             "env": {
+//                 "PYTHONPATH": "${/home/weidong.shi1/code/planner/P63/}:${env:PYTHONPATH}"
+//             },
+//         }
+//     ],
+// }
+
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "deen",
+            "type": "python",
+            "request": "launch",
+            "program": "/perception-hl/weidong.shi1/extrawork/reid/cross_reid/deenbase/train.py",
+            "justMyCode": false,
+            "console": "internalConsole",
+            "args": [
+                "--dataset", "regdb",
+                "--gpu", "4",
+                "--model_path", "./results/debug/regdb/",
+                "--log_path", "./results/debug/regdb/",
+            ],
+        }
+    ],
+}
